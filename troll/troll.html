@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="troll.css">
+</head>
+<body>
+    <div id="container">
+        <div id="title-box">
+            <span class="crush"> Ê! Ăn đấm không? </span>
+        </div>
+        <div class="answer-box">
+            <div id="Yes-answer" class="item">Có</div>
+            <div id="No-answer" class="item" onmouseover="troll()">Không</div>
+        </div>
+    </div>
+    <script>
+        function troll(){
+            let answer = document.getElementsByClassName('answer-box')[0];
+            answer.classList.toggle('troll');
+        }
+    </script>
+</body>
+</html>

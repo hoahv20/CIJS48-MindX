@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone Messenger</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+    <script src="./learning.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyA8D3BT4Oi_h_ToTAN0prCDPhEJYkTF_F8",
+            authDomain: "clone-sign-in---sign-up.firebaseapp.com",
+            databaseURL: "https://clone-sign-in---sign-up.firebaseio.com",
+            projectId: "clone-sign-in---sign-up",
+            storageBucket: "clone-sign-in---sign-up.appspot.com",
+            messagingSenderId: "351609618219",
+            appId: "1:351609618219:web:9a3a6cdffcd8ab85574f6e",
+            measurementId: "G-HGSV4T60JR"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+
+</head>
+<body>
+    <article id="content">
+        <section class="aside-left">
+            <div class="title">Conversations</div>
+            <form class="form-add-conversation">
+                <div class="input-wrapper">
+                    <label for="title">
+                        <i class="fa fa-comments" aria-hidden="true"></i>
+                    </label>
+                    <input type="text" name="title" id="title">
+                </div>
+                <div class="input-wrapper">
+                    <label for="friend-email">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                    </label>
+                    <input type="text" name="friendEmail" id="friend-email">
+                </div>
+                <button class="btn-primary">Add</button>
+            </form>
+            
+            <div class="conversations-list">
+                <div class="conversation">
+                    <p class="conversation-title">Conversation 1</p>
+                    <p class="conversation-member">2 members</p>
+                </div>
+            
+                <div class="conversation">
+                    <p class="conversation-title">Conversation 2</p>
+                    <p class="conversation-member">2 members</p>
+                </div>
+            
+                <div class="conversation">
+                    <p class="conversation-title">Conversation 3</p>
+                    <p class="conversation-member">2 members</p>
+                </div>
+            </div>
+            </section>
+            
+            <section class="chat-container">
+            <div class="title">Chat: Title 1</div>
+            <div class="messages-list">
+                <div class="message">
+                    <span>Hello World</span>
+                </div>
+            
+                <div class="message">
+                    <span>How are you?</span>
+                </div>
+            
+                <div class="message your">
+                    <span>I'm fine. Thank you, bro.</span>
+                </div>
+            </div>
+            
+            <form class="form-add-message">
+                <div class="input-wrapper">
+                    <input type="text" name="messageContent">
+                </div>
+                <button class="btn-primary">Send</button>
+            </form>
+            </section>
+            <section class="aside-right">
+            <div class="title">Details</div>
+            <div class="conversation-details">
+                <div class="conversation-member">
+                    <p>hoahv2000@gmail.com</p>
+                    <p>someone@gmail.com</p>
+                </div>
+                <div class="conversation-created-at">
+                    2020/06/16
+                </div>
+            </div>
+        </section>
+    </article>
+</body>
+</html>

@@ -1,0 +1,106 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#content{
+    display: flex;
+}
+
+.btn-primary{
+    width: 50px;
+    height: 30px;
+    background-color: #6dabe4;
+    color: #FFFFFF;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.aside-left{
+    width: 30vw;
+    height: 100vh;
+    padding: 15px;
+}
+
+.chat-container{
+    width: 50vw;
+    height: 100vh;
+    padding: 15px;
+}
+
+.aside-right{
+    width: 20vw;
+    height: 100vh;
+    padding: 15px;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    background-color: #F1F5F8;
+    color: #509DE1;
+}
+
+.input-wrapper{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid #282822;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.input-wrapper > input {
+    border: none;
+    height: 35px;
+    width: 100%;
+    outline: none;
+}
+
+.input-wrapper > label{
+    display: inline-block;
+    width: 30px;
+}
+
+.conversation{
+    background-color: #F1F5F8;
+    border-bottom: 1px solid #D6DFE6;
+}
+
+.conversation-title{
+    font-weight: bold;
+}
+
+.conversation-member{
+    font-size: 14px;
+}
+
+.form-add-message{
+    display: flex;
+    align-items: center;
+}
+
+.messages-list{
+    height: 83%;
+}
+
+.message span{
+    padding: 10px;
+    background-color: #4A8AF4;
+    border-radius: 5px;
+    color: #FFFFFF;
+    display: inline-block;
+    margin-bottom: 3px;
+}
+
+.your{
+    text-align: right;
+}
+
+.your span{
+    background-color: #D6DFE6;
+    color: #282822;
+}
